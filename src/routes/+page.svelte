@@ -1,2 +1,11 @@
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<script>
+	import Island from './island.svelte';
+</script>
+
+<div
+	class="w-full h-lvh bg-[url('/images/magicpattern-87PP9Zd7MNo-unsplash-min.jpg')] bg-cover
+    flex justify-center items-center p-4"
+>
+	<Island></Island>
+</div>
+
