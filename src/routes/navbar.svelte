@@ -1,7 +1,7 @@
 <nav
 	class="w-full fixed flex justify-between items-center border-b-[#ffe4c4] border-b-2
     bg-[url('/images/gradient_navbar-min.png')] bg-cover text-[#ffe4c4] font-catchy
-    shadow-md shadow-zinc-700 h-12"
+    shadow-md shadow-zinc-700 h-12 z-100"
 >
 	<!--navbar will be divided into two parts-->
 	<div id="left part" class="flex items-center">
