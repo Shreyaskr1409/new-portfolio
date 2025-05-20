@@ -1,3 +1,7 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <nav
 	class="w-full fixed flex justify-between items-center border-b-[#ffe4c4] border-b-2
     bg-[url('/images/gradient_navbar-min.png')] bg-cover text-[#ffe4c4] font-catchy
@@ -13,26 +17,32 @@
 		</h1>
 	</div>
 	<div id="right part" class="flex gap-2 items-center">
-		<div
+		<button
 			class="navigation text-lg text-[17px] bg-[#00000040] px-2 rounded-lg underline hover:scale-110 duration-100 cursor-pointer"
+			on:click={() => {
+				goto('/projects');
+			}}
 		>
 			PROJECTS
-		</div>
-		<div
+		</button>
+		<button
 			class="navigation text-lg text-[17px] bg-[#00000040] px-2 rounded-lg underline hover:scale-110 duration-100 cursor-pointer"
+			on:click={() => {
+				window.open('/pdfs/resume.pdf', '_blank');
+			}}
 		>
 			RESUME
-		</div>
-		<div
+		</button>
+		<button
 			class="navigation text-lg text-[17px] bg-[#00000040] px-2 rounded-lg underline hover:scale-110 duration-100 cursor-pointer"
 		>
 			CONTACT
-		</div>
-		<div
+		</button>
+		<button
 			class="navigation text-lg text-[17px] bg-[#00000040] px-2 rounded-lg underline hover:scale-110 duration-100 cursor-pointer"
 		>
 			ABOUT
-		</div>
+		</button>
 		<div id="rp_box" class="aspect-square m-1 w-8 bg-[#7fffd4]"></div>
 	</div>
 </nav>
