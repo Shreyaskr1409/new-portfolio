@@ -1,11 +1,11 @@
 <div
 	id="i_left_box"
 	class="bg-[url('/images/pexels-zahide-tas-367420941-19920240-min.jpg')]
-        rounded-2xl h-full w-2/5 bg-[length:120%_auto] duration-[0.5s] ease-out
+        rounded-2xl h-full min-w-2/5 w-2/5 bg-[length:120%_auto] duration-[0.5s] ease-out
         hover:bg-[length:110%_auto] bg-center transition-all brightness-100
         hover:brightness-90 shadow-[inset_0_0_50px_10px_#00000000]
         hover:shadow-[inset_0_0_50px_#000000a3]
-        group flex flex-col"
+        group flex flex-col max-md:w-full max-sm:h-[600px]"
 >
 	<h1 class="text-white font-raleway text-4xl text-[42px] px-2 py-1 text-shadow-[0_0_10px_#000000]">
 		Want to work together?
