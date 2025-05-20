@@ -19,7 +19,7 @@
 			>
 		</div>
 		<div
-			class="w-48 h-68 bg-[url('images/IMG20240501133325.jpg')] bg-cover bg-center rounded-full shadow-[0_0_20px_#000000A0]"
+			class="w-48 h-68 bg-[url('/images/IMG20240501133325.jpg')] bg-cover bg-center rounded-full shadow-[0_0_20px_#000000A0]"
 		></div>
 		<div class="flex flex-col items-center gap-1">
 			<h4 class="font-catchy font-bold">SOFTWARE DEVELOPER</h4>
