@@ -10,11 +10,14 @@
 	<!--navbar will be divided into two parts-->
 	<div id="left part" class="flex items-center">
 		<div id="lp_box" class="aspect-square m-1 w-8 bg-[#7fffd4]"></div>
-		<h1
+		<button
 			class="text-5xl text-[50px] hover:text-shadow-lg text-shadow-[#000000C0] duration-100 cursor-pointer"
+			on:click={() => {
+				goto('/');
+			}}
 		>
 			Portfolio
-		</h1>
+		</button>
 	</div>
 	<div id="right part" class="flex gap-2 items-center">
 		<button
