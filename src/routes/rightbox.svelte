@@ -1,3 +1,7 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <div id="i_right_box" class="grow flex flex-col items-center text-center gap-8">
 	<div>
 		<h1 class="font-nexarust text-xl">I am</h1>
@@ -15,7 +19,9 @@
 			<button
 				class="bg-[url('/images/gradient_navbar-min.png')] rounded-sm text-[color:#ffe4c4]
                 font-raleway text-sm px-4 hover:scale-115 cursor-pointer transition"
-				>My GitHub</button
+				on:click={() => {
+					window.open('https://github.com/Shreyaskr1409', '_blank');
+				}}>My GitHub</button
 			>
 		</div>
 		<div
@@ -26,7 +32,9 @@
 			<button
 				class="bg-[url('/images/gradient_navbar-min.png')] rounded-sm text-[color:#ffe4c4]
                 font-raleway text-sm px-4 hover:scale-115 cursor-pointer transition"
-				>My LinkedIn</button
+				on:click={() => {
+					window.open('https://www.linkedin.com/in/shreyaskumar1409/', '_blank');
+				}}>My LinkedIn</button
 			>
 		</div>
 	</div>

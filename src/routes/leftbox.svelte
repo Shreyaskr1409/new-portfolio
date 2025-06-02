@@ -1,3 +1,7 @@
+<script>
+	import { goto } from '$app/navigation';
+</script>
+
 <div
 	id="i_left_box"
 	class="bg-[url('/images/pexels-zahide-tas-367420941-19920240-min.jpg')]
@@ -25,15 +29,21 @@
 	<div class="w-fit flex-col flex gap-2 grow justify-end pb-8">
 		<button
 			class="bg-[#ffe4c4] w-full px-4 font-raleway text-center font-bold cursor-pointer hover:scale-110 hover:shadow-[0_0_10px_#000000] duration-100"
-			>PROJECTS</button
+			on:click={() => {
+				goto('/projects');
+			}}>PROJECTS</button
 		>
 		<button
 			class="bg-[#ffe4c4] w-full px-4 font-raleway text-center font-bold cursor-pointer hover:scale-110 hover:shadow-[0_0_10px_#000000] duration-100"
-			>RESUME</button
+			on:click={() => {
+				window.open('/pdfs/resume.pdf', '_blank');
+			}}>RESUME</button
 		>
 		<button
 			class="bg-[#ffe4c4] w-full px-4 font-raleway text-center font-bold cursor-pointer hover:scale-110 hover:shadow-[0_0_10px_#000000] duration-100"
-			>CONTACT</button
+			on:click={() => {
+				window.open('https://www.linkedin.com/in/shreyaskumar1409/', '_blank');
+			}}>CONTACT</button
 		>
 	</div>
 </div>
